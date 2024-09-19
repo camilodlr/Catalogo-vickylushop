@@ -6,11 +6,12 @@
     <title>VickyLu Shop</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <link href="pics/logopequeño.png" rel="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <img src="pics/logopequeño.jpg" alt="VickyLu Shop Logo">
-        <h1>VickyLu Shop</h1>
+        <img src="pics/logopequeño.png" alt="VickyLu Shop Logo">
     </header>
     <nav>
         <a href="#">Inicio</a>
@@ -18,7 +19,7 @@
         <a href="#">Contacto</a>
         <a href="#" onclick="toggleCart()">Carrito (<span id="cart-count">0</span>)</a>
     </nav>
-    
+      
     <div class="container">
         <!-- Producto 1 -->
         <div class="product">
@@ -50,6 +51,27 @@
         <button onclick="checkout()">Finalizar compra</button>
     </div>
 
+    <div id="contact">
+
+    </div>
+
       <script src="script.js"></script>
 </body>
+<footer>
+    <div class="social-footer"></div>
+        <a href="https://www.tiktok.com/@vickylushop" target="_blank" class="social-button">
+            <i class="fab fa-tiktok"></i>
+          </a>
+        <a href="https://www.whatsapp.com" target="_blank" class="social-button">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        <a href="https://www.instagram.com/vickylushop/" target="_blank" class="social-button">
+            <i class="fab fa-instagram"></i>
+          </a>
+    </div>
+    <br>
+    <p>
+        &copy; Camilo de los Ríos -2024 Tienda Vickylushop
+    </p>
+</footer>
 </html>

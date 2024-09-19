@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffe6f0; /* Fondo suave rosado */
+    color: #333;
+}
+header {
+    background-color: #f8bbd0; /* Fondo rosado */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+header img {
+    width: 150px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #f48fb1; /* Rosado oscuro */
+}
+nav a {
+    color: #fff;
+    padding: 0 15px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #f06292; /* Rosado más intenso */
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+.product img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px; /* Bordes redondeados */
+}
+.product h3 {
+    margin: 15px 0;
+    color: #e91e63; /* Tono rosado para los títulos */
+}
+.product button {
+    background-color: #f06292; /* Botón rosado */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.product button:hover {
+    background-color: #ec407a; /* Botón rosado más intenso */
+}
+#cart {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 300px;
+    display: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#cart h2 {
+    margin-bottom: 10px;
+    color: #d81b60; /* Título rosado */
+}
+#cart-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#cart-items li {
+    margin-bottom: 10px;
+}
+#cart-items button {
+    background-color: #ff1744; /* Botón de eliminar en rojo */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+}
+#total {
+    font-weight: bold;
+    margin-top: 10px;
+}

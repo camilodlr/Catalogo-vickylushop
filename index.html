@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VickyLu Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="pics/logopequeño.jpg" alt="VickyLu Shop Logo">
+        <h1>VickyLu Shop</h1>
+    </header>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Tienda</a>
+        <a href="#">Contacto</a>
+        <a href="#" onclick="toggleCart()">Carrito (<span id="cart-count">0</span>)</a>
+    </nav>
+    
+    <div class="container">
+        <!-- Producto 1 -->
+        <div class="product">
+            <img src="pics/cadenafloracero.jpg" alt="Cadena Flor Acero">
+            <h3>Cadena Flor Acero</h3>
+            <p>$15.000</p>
+            <button onclick="addToCart('Cadena Flor Acero', 15)">Añadir al carrito</button>
+        </div>
+        <!-- Producto 2 -->
+        <div class="product">
+            <img src="pics/collar estrella.jpg" alt="Collar Estrella">
+            <h3>Collar Estrella</h3>
+            <p>$20.000</p>
+            <button onclick="addToCart('Collar Estrella', 20)">Añadir al carrito</button>
+        </div>
+        <!-- Producto 3 -->
+        <div class="product">
+            <img src="pics/Collar flower.jpg" alt="Collar Flower">
+            <h3>Collar Flower</h3>
+            <p>$18.000</p>
+            <button onclick="addToCart('Collar Flower', 18)">Añadir al carrito</button>
+        </div>
+    </div>
+
+    <div id="cart">
+        <h2>Carrito de compras</h2>
+        <ul id="cart-items"></ul>
+        <p id="total">Total: $0.00</p>
+        <button onclick="checkout()">Finalizar compra</button>
+    </div>
+
+      <script src="script.js"></script>
+</body>
+</html>

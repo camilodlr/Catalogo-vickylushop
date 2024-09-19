@@ -102,3 +102,36 @@ nav a:hover {
     font-weight: bold;
     margin-top: 10px;
 }
+
+footer {
+    background-color: #f48fb1; /* Fondo oscuro para el footer */
+    padding: 20px;
+    display: flex; /* Activa flexbox */
+    justify-content: center; /* Centra horizontalmente los iconos */
+    align-items: center; /* Centra verticalmente */
+  }
+
+  .social-footer {
+    display: flex; /* Activa flexbox dentro del contenedor de iconos */
+    gap: 100px; /* Espacio entre los iconos */
+  }
+
+  .social-button {
+    font-size: 40px; /* Tamaño del icono */
+    color: #a2375b; /* Color del icono */
+    text-decoration: none; /* Sin subrayado */
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease; /* Transición suave */
+  }
+
+  .social-button:hover {
+    background-color: #e8799e; /* Cambio de color al pasar el mouse */
+  }
+
+  /* Responsivo: tamaño menor para pantallas pequeñas */
+  @media (max-width: 600px) {
+    .social-button {
+      font-size: 30px;
+    }
+  }
